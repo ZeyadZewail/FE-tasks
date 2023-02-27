@@ -10,7 +10,7 @@
         </referenceBlock>
 
         <referenceContainer name="page.wrapper">
-            <block class="Magento\Framework\View\Element\Template" name="shipping_banner" template="Magento_Theme::ShippingBanner.phtml" before="-"/>
+            <block ifconfig="carriers/freeshipping/active" class="Magento\Framework\View\Element\Template" name="shipping_banner" template="Magento_Theme::ShippingBanner.phtml" before="-"/>
         </referenceContainer>
         <move element="form.subscribe" destination="page.wrapper" as="new-newsletter" before="footer-container"/>
     </body>
